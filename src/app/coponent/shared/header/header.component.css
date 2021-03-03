@@ -1,0 +1,17 @@
+.cls{
+    background-color: burlywood;
+    height: 40px;
+    text-align: center;
+}
+.icon{
+    position: relative;
+
+}
+.cart{
+    position: absolute;
+    border: 1px solid blue;
+    top: 0;
+    right: 30px;
+    border-radius: 60%;
+ 
+}
