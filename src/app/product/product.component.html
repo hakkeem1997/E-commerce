@@ -1,18 +1,49 @@
 <div class="head">
-    <div class="cart">
-        <button type="button" (click)="sum()">CART</button>
-        <br>
-        <input type="text" value="{{a}}" style="width: 40px;height: 30px;">
-    </div><br><br>
+
     <div class="item">
         <div class="1"><img src="../../assets/img/images.jpg">
             <div>TEMPER GLASS</div>
             <input type="text" [(ngModel)]="price">
 
         </div>
+       <p *ng for ='let p of pros'></p>
+       
         <button type="button" (click)="onSub()"><i class="fa fa-minus">-</i></button>
         <input type="text" value="{{count}}">
         <button type="button" (click)="onAdd()"><i class="fa fa-plus">+</i></button>
+        <div class="cart">
+            <button type="button" (click)="sum()">CART</button>
+            
+            <input type="text" value="{{a}}" style="width: 40px;height: 30px;">
+        </div>
+
     </div>
+    <hr>
+    
+   
+    <div class="item">
+        <div class="2"><img src="../../assets/img/image.jpg">
+            <div>HOLDER</div>
+            <input type="text" [(ngModel)]="price1">
+
+        </div>
+      
+        <button type="button" (click)="onSub1()"><i class="fa fa-minus">-</i></button>
+        <input type="text" value="{{count1}}">
+        <button type="button" (click)="onAdd1()"><i class="fa fa-plus">+</i></button>
+  
+    <div class="cart">
+        <button type="button" (click)="sum1()">CART</button>
+        
+        <input type="text" value="{{b}}" style="width: 40px;height: 30px;">
+    </div>  </div>
+    
+    <hr>
+ 
+    <div class="to">
+        <button (click)=ss()>total</button>
+        <input type="number" placeholder="TOTAL" class="to" [(ngModel)]=tot>
+    </div>
+   
     
 </div>
